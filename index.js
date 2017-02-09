@@ -14,7 +14,7 @@ res.send('hello, i am a chatbot')
 })
 
 app.get('/webhook', function(req,res) {
-    if(req.query['hub.verify_token']=== ''){
+    if(req.query['hub.verify_token']=== 'Sample ALM'){
         res.send(req.query['hub.challenge'])
     }
 res.send('some thing wrong')
